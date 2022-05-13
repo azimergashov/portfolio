@@ -1,0 +1,148 @@
+.hero{
+
+    &__container{
+        background-image: url("../images/hero-backgraund1x.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 600px;
+        height: 100%;
+        position: relative;
+
+    }
+
+    &__wrapper{
+        max-width: 445px;
+        background-color: #FFFFFF;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    &__heading{
+        margin: 0;
+        padding: 0;
+        margin-right: 55px;
+        margin-top: 56px;
+        margin-bottom: 53px;
+        font-family: 'Ibarra Real Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 50px;
+        letter-spacing: -0.446429px;
+        color: #33323D;
+    }
+
+    &__button{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background-color: #203A4C;
+        max-width: 200px;
+        min-height: 48px;
+        width: 100%;
+        border: none;
+
+
+    }
+
+    &__button-left{
+        background-color: #000000;
+        opacity: 0.4;
+        height: 100%;
+        min-height: 48px;
+        width: 48px;
+        text-align: center;
+        padding: 17px;
+        margin-right: 15px;
+    }
+
+    &__button:hover{
+        background-color: #5FB4A2;
+    }
+
+    &__button-left:hover{
+        background-color: aquamarine;
+    }
+
+    &__button:active{
+        background-color: dimgray;
+        opacity: 0.2;
+    }
+
+
+
+
+}
+
+@media only screen and(max-width: 768px){
+    .hero{
+
+        &__container{
+            background-image: url("../images/hero-tablet1x.png");
+        }
+
+        &__wrapper{
+            max-width: 514px;
+        }
+    }
+}
+
+@media only screen and(max-width: 576px){
+    .hero{
+        &__container{
+            background-image: url("../images/hero-mobile1x.png");
+        }
+
+        &__wrapper{
+            bottom: -60%;
+        }
+
+        &__heading{
+            margin-right: 0px;
+        }
+    }
+}
+
+
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+    .hero{
+        &__container{
+            background-image: url("../images/hero-backgraund2x@2x.png");
+        }
+    }
+
+    @media only screen and (max-width: 768px){
+        .hero{
+            &__container{
+                background-image: url("../images/hero-tablet2x@2x.png");
+            }
+        }
+    }
+
+    @media only screen and (max-width: 576px){
+        .hero{
+            &__container{
+                background-image: url("../images/hero-mobile2x@2x.png");
+            }
+        }
+    }
+}

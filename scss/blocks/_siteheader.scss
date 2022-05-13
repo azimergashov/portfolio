@@ -1,0 +1,47 @@
+.siteheader{
+    margin-top: 64px;
+    margin-bottom: 54px;
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__list{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    &__item + &__item{
+        margin-left: 20px;
+    }
+
+    &__link{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #33323D;
+    }
+
+    &__link:hover{
+        color: #5FB4A2;
+        transition: all 0.4s;
+    }
+}
+
+
+@media only screen and (max-width: 372px){
+    .siteheader{
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,24 @@
+.button{
+    text-decoration: none;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #33323D;
+    border: solid 2px #33323D;
+    padding: 17px 32px;
+}
+
+.button:hover{
+    background-color: #33323D;
+    color: #FFFFFF;
+}
+
+.button:active{
+    background-color: #FFFFFF;
+    color: #33323D;
+    opacity: 0.7;
+}
